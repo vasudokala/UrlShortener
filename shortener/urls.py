@@ -4,7 +4,7 @@ urlpatterns = patterns('shortener.views',
     url(r'^$', 'index', name='home'),
     # for our home/index page
  
-    url(r'^redirect/(?P<short_id>\w{6})$', 'redirect_original', name='redirectoriginal'),
+    url(r'^redirect/$', 'redirect_original', name='redirectoriginal'),
     # when short URL is requested it redirects to original URL
  
     url(r'^makeshort/$', 'shorten_url', name='shortenurl'),
